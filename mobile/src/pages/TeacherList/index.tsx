@@ -97,17 +97,17 @@ const TeacherList = () => {
               <View style={styles.inputBlock}>
                 <Text style={styles.label}>Dia da semana</Text>
 
-                <TextInput
+                {/* <TextInput
                   placeholderTextColor="#C1BCCC"
                   style={styles.input}
                   value={week_day}
                   onChangeText={(text) => setWeek_day(text)}
                   placeholder="Qual o dia?"
-                ></TextInput>
+                ></TextInput> */}
 
                 <Picker
                   selectedValue={week_day}
-                  style={{ height: 50, width: 100 }}
+                  style={[styles.input]}
                   onValueChange={(value) => setWeek_day(value.toString())}
                 >
                   <Picker.Item label="domingo" value="0" />
